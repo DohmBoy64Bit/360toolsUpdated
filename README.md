@@ -39,6 +39,13 @@ While the `rexglue init` command provides the basic project structure out-of-the
 - `keyboard_driver.cpp` / `keyboard_driver.h` — Keyboard + XInput merged input driver
 - `test_boot.cpp` — Console-mode test harness for isolating crashes
 
+### `patches/` -- ReXGlue SDK Fixes
+
+While the ReXGlue SDK handles most things natively, this directory contains several unmerged upstream patches that are necessary for complex games:
+- **0001 & 0005**: Critical fixes for manual switch table parsing and `setjmp`/`longjmp` non-volatile register preservation.
+- **0002**: Kernel tolerance fix for sloppy physical memory allocations.
+- **0003 & 0004**: Vital D3D12 synchronization fixes for UAV barriers and command submission.
+
 ### `docs/` -- How It All Works
 
 | Doc | What It Covers |
