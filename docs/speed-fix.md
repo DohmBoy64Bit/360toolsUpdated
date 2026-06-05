@@ -37,6 +37,6 @@ This gives precise 60 Hz frame pacing regardless of Windows timer resolution.
 
 ## Timebase Scaling (No longer needed!)
 
-Older recompilers like XenonRecomp translated the PowerPC `mftb` (move from timebase) instruction to the x86 `__rdtsc()` intrinsic. Since the Xbox 360 timebase runs at **49.875 MHz** and modern PC TSC counters run at **~3-4 GHz**, this caused massive timing inaccuracies unless manually overridden.
+Older static recompilers translated the PowerPC `mftb` (move from timebase) instruction to the x86 `__rdtsc()` intrinsic. Since the Xbox 360 timebase runs at **49.875 MHz** and modern PC TSC counters run at **~3-4 GHz**, this caused massive timing inaccuracies unless manually overridden.
 
 **The modern ReXGlue SDK handles timebase scaling natively.** When `rexglue codegen` encounters an `mftb` instruction, it automatically translates it to a call to `QueryGuestTickCount()`, which returns properly scaled guest ticks at 50 MHz. No manual overrides or patches are needed.

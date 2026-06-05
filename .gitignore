@@ -26,7 +26,7 @@ __pycache__/
 *.god
 pe_image.bin
 
-# Generated files from XenonRecomp
+# Generated files from ReXGlue SDK codegen
 generated/
 
 # ReXGlue SDK (cloned separately)
