@@ -52,7 +52,7 @@ The game is distributed as a LIVE (STFS) container:
 
 ## ABI Addresses
 
-Found by scanning PE image with `tools/find_abi_addrs.py`.
+Detected natively by ReXGlue SDK block analysis.
 
 | Function | Address | Verified |
 |----------|---------|----------|
@@ -82,11 +82,11 @@ Found by scanning PE image with `tools/find_abi_addrs.py`.
 
 ## Jump Tables
 
-TODO: Run XenonAnalyse to detect jump tables.
+TODO: Run ReXGlue codegen to auto-detect jump tables.
 
 ## Recompilation Statistics
 
-TODO: Run XenonRecomp first pass.
+TODO: Run ReXGlue codegen first pass.
 
 ## Game Information
 
