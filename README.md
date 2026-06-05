@@ -126,6 +126,10 @@ The tools in this repo will get you from "I have an XBLA download" to "I have ge
 
 **Every game you recomp is a game preserved forever.**
 
+## Credits
+
+This repository is a modernized, ReXGlue-native fork of the original `360tools` project. Massive thanks and credit to **[sp00nznet](https://github.com/sp00nznet)** for creating the original pipeline, scripts, and discovering the foundational fixes that make static recompilation of Xbox 360 games possible!
+
 ## License
 
 Tools and scripts in this repo are provided under the MIT License unless otherwise noted in individual files. `extract_stfs.py` contains code derived from work by Rene Ladan under the 2-clause BSD license.
