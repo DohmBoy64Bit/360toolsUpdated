@@ -52,7 +52,6 @@ While the ReXGlue SDK handles most things natively, this directory contains seve
 |-----|---------------|
 | **`rexglue-workflow.md`** | Full step-by-step from "I have an XBLA download" to "I have a running PC executable". |
 | **`speed-fix.md`** | The VdSwap frame limiter (Windows `Sleep(16)` actually sleeps 31ms!) and how to fix game speed. |
-| **`binary-analysis.md`** | How to analyze an Xbox 360 binary: memory layout, finding entry points, and debugging. |
 
 ## Quick Start
 
